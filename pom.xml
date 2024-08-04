@@ -53,10 +53,11 @@ under the License.
     <url>https://ci-builds.apache.org/job/Maven/job/maven-box/job/maven-project-utils/</url>
   </ciManagement>
   <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scm:svn:https://svn.apache.org/repos/asf/maven/website/components/${maven.site.path}</url>
-    </site>
+    <repository>
+      <id>nexus</id>
+      <name>digierasr</name>
+      <url>http://52.62.171.184:8081/repository/amazon-snapshot/</url>
+    </repository>
   </distributionManagement>
 
   <properties>
